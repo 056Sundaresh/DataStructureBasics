@@ -17,11 +17,12 @@ void dequeue(int q[],int *front,int *rear)
     a=*front;
     b=*rear;
     printf("\nThe value %d is deleted from the queue.",q[a]);
-    for(i=a;i<b;i++)
+    (*front)++;
+    /*for(i=a;i<b;i++)
     {
         q[i]=q[i+1];
     }
-    (*rear)--;
+    (*rear)--;*/
 }
 
 void enqueue(int q[],int *rear)
